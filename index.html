@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html ng-app="products">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/product-list-page.css">
+
+    </head>
+    <body ng-controller="MainController">
+        
+        <div ng-click="getAddedProducts()" class="cart-btn">
+            <span>Cart ({{cart.products.length}}) items added</span>
+        </div>
+
+        <div ng-view>
+        </div>
+
+
+    </body>
+    
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-route.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="js/services/ProductsService.js"></script>
+    <script type="text/javascript" src="js/controllers/ProductListController.js"></script>
+    
+	<script type="text/javascript" src="js/controllers/MainController.js"></script>
+    
+     
+    
+
+
+</html>

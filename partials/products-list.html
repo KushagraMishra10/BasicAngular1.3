@@ -1,0 +1,54 @@
+<div ng-controller="ProductListController">
+     <div class="products-table-container">
+        
+        <div class="products-list-header">
+            
+            <div class="product-id-header">
+                <span>Product Id</span>
+            </div>
+            <div class="product-name-header">
+                <span>Product Name</span>
+            </div>
+            <div class="product-price-header">
+                <span>Product Price</span>
+            </div>
+            <div class="actions-header">
+                <span>Actions</span>
+            </div>
+        
+        </div>
+        
+        <div class="products-list-row" ng-repeat="product in productsShown track by $index">
+            <div class="product-id-header">
+                <span>{{product.id}}</span>
+            </div>
+            <div class="product-name-header">
+                <span>{{product.name}}</span>
+            </div>
+            <div class="product-price-header">
+                <span>{{product.price}}</span>
+            </div>
+            <div class="actions-header">
+                <div class="actions-btn-container">
+                    <div class="add-to-cart-btn" ng-click="addToCart(product)">
+                        <span>Add to cart</span>
+                    </div>
+                    <div  class="quick-view-btn" ng-click="quickView(product)">
+                        <span>Quick View</span>
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+    </div>
+    
+    <div>
+        <span ng-click="previousPage()">Prev</span>
+        <span ng-click="nextPage()">Next</span>
+    </div>
+    
+    
+
+</div>

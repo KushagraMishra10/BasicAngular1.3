@@ -1,0 +1,46 @@
+.products-table-container .products-list-header{
+    
+    border:1px solid black;
+    
+}
+
+
+.product-id-header{
+    display:inline-block;
+    width:10%;
+    vertical-align: middle;
+    padding:5px;
+}
+ .product-name-header{
+    display:inline-block;
+    width:30%;
+    padding:5px;
+}
+ .product-price-header{
+    display:inline-block;
+    width:30%;
+    padding:5px;
+}
+ .actions-header{
+    display:inline-block;
+    width:25%;
+    padding:5px;
+}
+
+.add-to-cart-btn{
+    border:1px solid black;
+    display:inline-block;
+    padding:5px;
+    width:77px;
+    height:20px;
+    cursor:pointer;
+    
+}
+.quick-view-btn{
+    display:inline-block;
+    border:1px solid black;
+    padding:5px;
+    width:77px;
+    height:20px;
+    cursor:pointer;
+}

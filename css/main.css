@@ -1,0 +1,10 @@
+.cart-btn{
+    
+    border:1px solid black;
+    width:135px;
+    height:20px;
+    padding:10px 5px;
+    margin-left:80%;
+    cursor:pointer;
+    margin-bottom:30px;
+}
